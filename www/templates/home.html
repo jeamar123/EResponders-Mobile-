@@ -1,0 +1,38 @@
+<ion-view>
+  <ion-content id="homepage" scroll="false">
+
+    <ion-nav-bar class="bar bar-header ">
+        <ion-nav-buttons side="left">
+            <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+            <button class="button button-icon button-clear ion-android-exit" ng-click="logout()"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar> 
+    
+    <header>
+      <div class="container-fluid ">
+        <div class="logo align-center">
+          <img src="img/logo.png" class="img-responsive">
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container-fluid align-center">
+          <div class="home align-center">
+            <!-- <ion-spinner icon="dots" class="spinner-dark" ></ion-spinner> -->
+            <button class="button button-blue button-large" ui-sref="options">Find Responders</button>
+            <button class="button button-green button-large" ui-sref="events">Current Events</button>
+            <button class="button button-red button-large" ng-click="alertLocationSelf()">Alert !</button>
+          </div>    
+      </div>
+    </section>
+    
+    <footer>
+      <div class="container-fluid">
+        <div class="copyright align-center">
+          <p>Copyright &copy; E-Responders 2016</p>
+        </div>
+      </div>
+    </footer>
+  </ion-content>  
+</ion-view>

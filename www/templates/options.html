@@ -1,0 +1,34 @@
+<ion-view>
+  <ion-nav-bar class="bar bar-header ">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+  </ion-nav-bar> 
+  <ion-content id="options" scroll="false">
+
+    <div class="card">
+      <div class="list">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="Search" ng-model="searchFilter">
+        </label>
+      </div>
+    </div>
+    <div ng-if="!searchFilter" class="card">
+      <ul class="list">
+        <a menu-close ui-sref="hospitals" class="item item-icon-right">Hospital</a>
+        <a menu-close ui-sref="fireStations" class="item item-icon-right">Fire Station</a>
+        <a menu-close ui-sref="policeStations" class="item item-icon-right">Police Station</a>
+        
+      </ul>
+    </div>
+
+    <div ng-if="searchFilter" class="card">
+      <ul class="list">
+        <a ng-click="selectedResponder(responder.name,responder.latitude,responder.longitude);" ng-repeat="responder in allResponders | filter:searchFilter" class="item item-icon-right"> 
+          {{ responder.name }}
+        </a>
+      </ul>
+    </div>
+  </ion-content>
+</ion-view>  
+ 

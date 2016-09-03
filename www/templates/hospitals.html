@@ -1,0 +1,21 @@
+<ion-view>
+  <ion-nav-bar class="bar bar-header ">
+	<ion-nav-back-button>
+	</ion-nav-back-button>
+  </ion-nav-bar> 
+  <ion-content id="hospitals" scroll="false">
+
+
+    <div class="card">
+      <ul class="list">
+        <a ng-click="selectedResponder(hospital.name,hospital.latitude,hospital.longitude);" ng-repeat="hospital in hospitals" class="item">
+          {{ hospital.name }}
+          <span class="item-note">
+            {{ hospital.distance }}
+          </span>
+        </a>
+        
+      </ul>
+    </div>
+  </ion-content>
+</ion-view>  

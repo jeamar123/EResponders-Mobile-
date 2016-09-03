@@ -1,0 +1,19 @@
+<ion-view>
+	<ion-nav-bar class="bar bar-header ">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+  </ion-nav-bar> 
+  <ion-content id="fireStations" scroll="false">
+    <div class="card">
+      <ul class="list">
+        <a ng-repeat="fireStation in fireStations" class="item">
+          {{ fireStation.name }}
+          <span class="item-note">
+            {{ fireStation.distance }}
+          </span>
+        </a>
+        
+      </ul>
+    </div>
+  </ion-content>
+</ion-view>  

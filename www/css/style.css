@@ -1,0 +1,153 @@
+/*---------* Reset CSS *------------ */
+* { 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+}
+
+@font-face {
+    font-family: gotham-htf;
+    src: url('../fonts/GothamHTF-Book.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: raleway-reg;
+    src: url('../fonts/Raleway-Regular.ttf')  format('truetype');
+}
+
+html{ 
+	height: 100%; 
+	width: 100%; 
+}
+body {
+	font-family: gotham-htf, arial, sans-serif !important;
+	height: 100%; 
+	width: 100%; 
+}
+h1 { 
+    font-size: 2.2em !important; 
+} 
+h2 { 
+    font-size: 2.0em !important;     
+} 
+h3 { 
+    font-size: 1.8em !important; 
+} 
+h4 { 
+    font-size: 1.6em !important;     
+} 
+h5 { 
+    font-size: 1.4em !important;     
+} 
+p { 
+    font-size: 1.2em;     
+}
+
+a{
+	text-decoration: none;
+	color: #555 !important;
+}
+
+/*
+/* ---------* end: Reset CSS *------- */
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .copyright p{
+    font-size: 15px;
+}
+
+
+/*-----CUSTOM-----*/
+
+
+.btn{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-group-lg>.btn,.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.button-red, .btn-danger{
+    background-color: #d9534f !important;
+    border-color: #d43f3a !important;
+    color: #FFF;
+}
+.button-red.activated{
+    background-color: #C9302C !important;
+}
+
+.button-blue, .btn-primary{
+    background-color: #337ab7 !important;
+    border-color: #2e6da4 !important;
+    color: #FFF;
+}
+
+.button-blue.activated{
+    background-color: #286090 !important;
+}
+
+.button-green, .btn-success{
+    background-color: #5cb85c !important;
+    border-color: #4cae4c !important;
+    color: #FFF;
+}
+
+.button-green.activated{
+    background-color: #449D44 !important;
+}
+
+.button-orange, .btn-warning{
+    background-color: #f0ad4e !important;
+    border-color: #eea236 !important;
+    color: #FFF;
+}
+
+.button-orange.activated{
+    background-color: #EC971F !important;
+}
+
+.align-center{
+	text-align: center;
+}
+
+.align-right{
+	text-align: center;
+}
+
+.float-right{
+	float: right;
+}
+/*END*/

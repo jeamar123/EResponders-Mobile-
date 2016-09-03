@@ -1,0 +1,37 @@
+
+<ion-pane id="header" scroll="false">
+  <ion-side-menus >
+      <ion-side-menu-content class="middle" edge-drag-threshold="true" drag-content="true" enable-menu-with-back-views="true">
+        <ion-nav-bar class="bar bar-header ">
+          
+        <ion-nav-title>
+        </ion-nav-title>
+
+          <ion-nav-back-button>
+          </ion-nav-back-button>
+
+          <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left" >
+            </button>
+          </ion-nav-buttons>
+
+        </ion-nav-bar>
+        
+        <ion-nav-view name="content"></ion-nav-view>
+      </ion-side-menu-content> 
+      
+
+      <ion-side-menu side="left" class="left-bar">
+        <ion-header-bar class="bar">
+          <h1 class="title title-center" >Menu</h1>
+        </ion-header-bar>
+        <ion-content scroll="false">
+          <ul class="list">
+            <a menu-close ui-sref="#" class="item item-icon-right">Profile<i class="icon ion-person"></i></a>
+            <a menu-close ui-sref="#" class="item item-icon-right">Options<i class="icon ion-gear-a"></i></a>
+            <a menu-close ui-sref="login" class="item item-icon-right">Log out</a>
+          </ul>
+        </ion-content>
+      </ion-side-menu>
+  </ion-side-menus> 
+</ion-pane>

@@ -1,0 +1,57 @@
+
+/*---------HOMEPAGE--------*/
+
+#homepage{
+	background: #FAFAFA;
+	
+}
+#homepage header{
+	padding: 80px 0 50px 0;
+    margin-bottom: 30px;
+}
+
+#homepage header .logo img{
+	width: 50%;
+	padding: 10px;
+	margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius:50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+}
+
+#homepage .home .btn{
+	width: 60%;
+	min-height: 0;
+	padding: 0 10px 0 0;
+	font-size: 19px;
+}
+
+#homepage .home  .button{
+	width: 60%;
+	margin: 10px 0;
+}
+
+#homepage .home  .btn i{
+	font-size: 30px;
+	padding: 10px;
+	margin-right: 5px;
+}
+
+#homepage .divider{
+	border-bottom: 2px solid #DBDBDB;
+    height: 10px;
+    margin: 5px auto 15px auto;
+    width: 35%;
+}
+
+#homepage .divider span{
+    padding: 0px 10px;
+	background: #FAFAFA;
+}
+
+
+
+
+
+/*END*/

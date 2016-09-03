@@ -1,0 +1,17 @@
+<ion-view>
+  <ion-nav-bar class="bar bar-header ">
+	<ion-nav-back-button>
+	</ion-nav-back-button>
+  </ion-nav-bar> 
+  <ion-content scroll="false">
+    <div class="card" ng-repeat="info in selectedResponderDetails">
+      <div class="item">
+        <img ng-src="img/{{info.img}}" class="img-responsive">
+      </div>
+      <div class="item">
+        {{info.name}}
+      </div>
+    </div>
+  </ion-content>
+</ion-view>  
+
